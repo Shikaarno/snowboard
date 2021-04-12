@@ -1,0 +1,44 @@
+@import "../common/var.less";
+@import "../common/mixins.less";
+
+
+
+html{
+	font-size: 16px;
+	font-family: 'Jura', sans-serif;
+}
+
+body{
+	background-color: @clrBody;
+	margin: 25px 0;
+	zoom: 110%;
+}
+
+.menu{
+	.menu();
+}
+
+.main{
+	.main_container();
+	h1{
+		display: inline;
+		text-transform: uppercase;
+	}
+	h2{
+		text-transform: uppercase;
+	}
+	.point{
+		.point_container();
+	}
+	.meet{
+		font-weight: 700;
+		ul{
+			font-weight: 300;
+			padding-left: 17px;
+			margin-top: 2px;
+		}
+	}
+	.imp{
+		.imp_container();
+	}
+}

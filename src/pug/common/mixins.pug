@@ -1,0 +1,39 @@
+mixin nav(className)
+	nav(class = className)
+		ul(class = className + "_list")
+			li(class = className + "__item")
+				a(class = className + "__link" href="#")
+					| на главную
+			li(class = className + "__item")
+				a(class = className + "__link" href="#")
+					| оглавление
+			li(class = className + "__item")
+				a(class = className + "__link" href="#")
+					| комментарии
+			li(class = className + "__item")
+				a(class = className + "__link" href="#")
+					| записки
+			li(class = className + "__item")
+				a(class = className + "__link" href="#")
+					| поиск
+
+mixin cover(className)
+	div(class = className)
+		div(class = className + "__main")
+			div(class = className + "__nli")
+				| национальная<br>лига инструкторов
+			div(class = className + "__isia")
+				| теория и методика<br>сноуборда.<br>инструктор<br>по сноуборду.
+			div(class = className + "__category")
+				| этап начального разучивания двигательных действий<br>(категория &#171;C&#187;)
+		a(class = className + "__button")
+			| начать
+
+mixin important(className, ...items)
+	div(class = className)
+		span(class = className + "__head")
+			| Важно:
+		ul(class = className + "__list")
+			each item in items
+				li(class = className + "__item")= item
+

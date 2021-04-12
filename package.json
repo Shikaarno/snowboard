@@ -1,0 +1,25 @@
+{
+  "name": "gulp_config",
+  "version": "1.0.0",
+  "description": "To start project:",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^4.6.0",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-pug": "^4.0.1",
+    "reset-css": "^5.0.1"
+  },
+  "dependencies": {
+    "gulp-less": "^4.0.1"
+  }
+}
